@@ -43,5 +43,8 @@
     "sass": "^1.66.1",
     "slick-carousel": "^1.8.1",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "swiper": "^10.3.1"
   }
 }

@@ -4,6 +4,7 @@ import {Container} from "@/components";
 import classes from "./HeaderSection.module.scss";
 import {Col, Row} from "antd";
 import SliderCard from "@/components/SliderCard/SliderCard";
+import SecondCard from "@/components/SecondCard";
 
 const HeaderSection = () => {
     const {t} = useTranslation();
@@ -16,7 +17,7 @@ const HeaderSection = () => {
                         <SliderCard/>
                     </Col>
                     <Col xs={8} lg={8}>
-
+                        <SecondCard/>
                     </Col>
                 </Row>
             </Container>
