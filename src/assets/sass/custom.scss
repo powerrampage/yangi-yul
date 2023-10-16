@@ -285,3 +285,46 @@ input:read-only {
   text-align: center !important;
 }
 
+
+body {
+  &.greyscaleMode {
+    filter: grayscale(100%);
+  }
+
+  &.greyscaleInvertMode {
+    filter: grayscale(100%) invert(100%);
+  }
+
+  &.fs-20 {
+    div,
+    a,
+    span {
+      font-size: 12px !important;
+    }
+  }
+
+  &.fs-40 {
+    div,
+    a,
+    span {
+      font-size: 14px !important;
+    }
+  }
+
+  &.fs-80 {
+    div,
+    a,
+    span {
+      font-size: 22px !important;
+    }
+  }
+
+  &.fs-100 {
+    div,
+    a,
+    span {
+      font-size: 24px !important;
+    }
+  }
+}
+

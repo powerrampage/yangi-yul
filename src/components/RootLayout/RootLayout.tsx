@@ -6,6 +6,7 @@ const RootLayout = ({ children }: { children: any }) => {
   return (
     <div className={classes.layout}>
       <Header />
+
       <div className={classes.content}>{children}</div>
       <Footer />
     </div>

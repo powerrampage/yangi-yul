@@ -1,0 +1,37 @@
+.line{
+  background: #091B44;
+  width: 100%;
+
+  .box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    span{
+      color: #FFF;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 10px 80px;
+      text-transform: uppercase;
+      will-change: transform;
+      transform: translateX(0);
+      white-space: nowrap;
+      animation: marquee 4s linear infinite;
+    }
+  }
+
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

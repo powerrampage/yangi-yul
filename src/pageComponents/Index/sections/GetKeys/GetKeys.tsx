@@ -28,15 +28,9 @@ const GetKeys = () => {
   return (
     <div className={"pt-90 pb-90"} id="getKey">
       <Container>
-        <h3 className="text-center size-24 mb-20 mt-0">{t("ELEKTRON KALITNI QUYIDAGICHA OLISH MUMKIN")}</h3>
+        <h3 className="text-center size-24 mb-20 mt-0">{t("")}</h3>
         <div className="text-center mb-40">
-          <Space size={20}>
-            {types?.map((el, k) => (
-              <Button type={type === el.value ? "primary" : "default"} shape="round" key={k} onClick={() => settype(el.value)}>
-                {el.title}
-              </Button>
-            ))}
-          </Space>
+
         </div>
 
         {type === "online" && <OnlineSection />}
