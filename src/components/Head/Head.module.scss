@@ -1,0 +1,23 @@
+@import "../../assets/sass/variables.scss";
+
+.wrapper {
+  position: relative;
+  padding: 130px 0 60px;
+  background: rgba(#000, 0.8);
+  color: #fff;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../../../public/img/slide1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}

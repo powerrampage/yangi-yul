@@ -1,0 +1,113 @@
+@import "../../../assets/sass/variables.scss";
+
+.wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 0;
+  position: fixed;
+  background-color: #ffffff;
+
+
+  .service {
+    padding: 10px 18px;
+    color: inherit !important;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .link {
+    position: relative;
+    padding: 10px 18px;
+    display: inline-block;
+    color: inherit !important;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+
+
+    &:hover{
+      color: $primary !important;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      width: 0%;
+      transform: translateX(-50%);
+      height: 2px;
+      background: transparent;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: $primary;
+
+      &::after {
+        width: 100%;
+        width: calc(100% - 24px);
+        background: $primary;
+      }
+    }
+  }
+
+  .left{
+
+    .logo{
+      margin-right: 20px;
+    }
+
+    .action_font{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      cursor: pointer;
+      margin-right: 20px;
+
+      svg{
+        margin-right: 5px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.local{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 1200px) {
+  .wrapper{
+    .link{
+      padding: 8px 12px 15px;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .wrapper{
+    .link{
+      padding: 8px 8px 15px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

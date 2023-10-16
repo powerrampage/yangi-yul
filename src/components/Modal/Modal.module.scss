@@ -1,0 +1,26 @@
+.modal{
+  :global{
+    .ant-modal-close{
+      display: none;
+    }
+  }
+}
+.close{
+  position: absolute !important;
+  min-width: 28px !important;
+  width: 28px !important;
+  height: 28px !important;
+  top: -10px;
+  right: -10px;
+  font-size: 14px !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  z-index: 100;
+
+  &:hover{
+    transform: rotate(180deg);
+  }
+}

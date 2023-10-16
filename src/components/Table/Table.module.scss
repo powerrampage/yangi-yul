@@ -1,0 +1,36 @@
+.table {
+	thead {
+		tr {
+			th {
+				font-weight: 700 !important;
+				background: #EAEFFA !important;
+				border-color: #DDE2F0 !important;
+				text-align: center !important;
+				line-height: 1 !important;
+			}
+		}
+	}
+
+	tbody {
+		tr {
+			td {
+				border-color: #DDE2F0 !important;
+			}
+		}
+	}
+
+	position: relative;
+
+	:global {
+		.ant-table {
+			line-height: 1.1;
+
+			table {
+				border-color: #DDE2F0 !important;
+			}
+		}
+		.ant-table-body {
+			overflow: auto hidden !important;
+		}
+	}
+}

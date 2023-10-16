@@ -1,0 +1,20 @@
+@import "../../../../assets/sass/variables.scss";
+
+.item{
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+
+  img{
+    width: 150px;
+    height: 150px;
+  }
+
+  &:hover{
+    border-color: $primary;
+  }
+}

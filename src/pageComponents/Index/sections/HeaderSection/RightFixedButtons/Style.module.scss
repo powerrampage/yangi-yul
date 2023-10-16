@@ -1,0 +1,71 @@
+@import "../../../../../assets/sass/variables.scss";
+
+.wrapper{
+  // position: fixed;
+  // top: 50%;
+  // right: 0;
+  // display: flex;
+  // flex-direction: column;
+  // margin-top: -190px;
+  // z-index: 10;
+
+  .button{
+    position: relative;
+    // right: -122px;
+    height: 55px;
+    background: #fff;
+    padding: 10px 28px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;box-shadow: 4px 4px 58px 0px rgba(0, 0, 0, 0.12);
+
+    span:first-child{
+      font-size: 24px;
+      margin-right: 15px;
+      color: $primary;
+    }
+
+    & + .button{
+      margin-top: 30px;
+    }
+
+    // &:hover{
+      // right: 0 !important;
+    // }
+  }
+
+  // &.open{
+  //   .button{
+  //     right: 0 !important;
+  //   }
+  // }
+}
+
+
+@media (max-width: 992px) {
+  .wrapper{
+    text-align: center;
+    .button{
+      display: inline-flex;
+      margin: 10px !important;
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//   .wrapper{
+
+//     &.open{
+//       .button{
+//         &:not(:hover){
+//           right: -122px !important;
+//         }
+//       }
+//     }
+//   }
+// }

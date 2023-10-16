@@ -1,0 +1,48 @@
+@import "../../../../assets/sass/variables.scss";
+
+.item{
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  height: 100%;
+
+  .icon{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: -90px auto 15px;
+    background: #fff;
+    border: 10px solid #F6F6F7;
+    border-radius: 60px;
+    line-height: 40px;
+    color: $primary;
+    font-size: 24px;
+    padding: 37px 0 0 47px;
+
+    span{
+
+      &:first-child{
+        background: #fff;
+        display: inline-block;
+        z-index: 2;
+        border-radius: 40px;
+        position: relative;
+        padding: 8px;
+        border: 1px solid $primary;
+      }
+
+      &:last-child{
+        position: absolute;
+        transform: rotate(30deg);
+        font-size: 50px;
+        // opacity: 0.5;
+        left: 18px;
+        top: 18px;
+        color: $green;
+      }
+    }
+
+  }
+}

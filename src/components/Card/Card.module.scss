@@ -1,0 +1,17 @@
+.card{
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #CDD1DD;
+  background: #F6F6F7;
+
+  &.isWhite{
+    background: #fff;
+  }
+
+  &.xs{
+    padding: 15px;
+  }
+  &.lg{
+    padding: 25px;
+  }
+}

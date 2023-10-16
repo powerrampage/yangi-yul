@@ -1,0 +1,19 @@
+@import "../../assets/sass/variables.scss";
+
+.item{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s;
+
+  img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &:hover{
+    border-color: $primary;
+  }
+}

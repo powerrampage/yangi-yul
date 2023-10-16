@@ -1,0 +1,31 @@
+.label{
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 40px;
+  padding: 0 40px 0 15px;
+  border-radius: 8px;
+  background: #E8F0FD;
+  border: 1px solid #B3C3EE;
+  line-height: 40px;
+  // text-align: center;
+  color: #325ECD;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &.lg{
+    height: 48px;
+    line-height: 48px;
+  }
+
+
+  &>.icon{
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+}
+.hiddenInput{
+  display: none;
+}

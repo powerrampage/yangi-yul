@@ -1,0 +1,52 @@
+.wrap{
+  position: relative;
+  width: 100%;
+
+  &>label{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 111;
+    padding: 0 3px;
+    background: #fff;
+    line-height: 1.1;
+  }
+}
+
+.error{
+  position: relative;
+  color: #E9573F;
+  padding-left: 15px;
+
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 6px;
+    background: #E9573F;
+    animation: pulse 1.5s infinite;
+  }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(#E9573F, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(#E9573F, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(#E9573F, 0);
+	}
+}

@@ -1,0 +1,21 @@
+@import "../../../../assets/sass/variables.scss";
+
+.item{
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  height: 100%;
+
+  .icon{
+    
+    svg{
+      width: 60px;
+      height: 60px;
+
+      path{
+        fill: $primary;
+      }
+    }
+  }
+}

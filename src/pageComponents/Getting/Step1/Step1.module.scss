@@ -1,0 +1,17 @@
+.wrapper{
+  width: 100%;
+  max-width: 900px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 0 auto;
+
+  .random_numbers{
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    height: 48px;
+    background-size: cover;
+    background-position: center;
+  }
+}

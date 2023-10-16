@@ -1,0 +1,62 @@
+@import "../../../../assets/sass/variables.scss";
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: -190px;
+  z-index: 10;
+
+  .button{
+    position: relative;
+    width: 180px;
+    right: -122px;
+    height: 55px;
+    background: $primary;
+    padding: 10px 20px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 0 1px rgba(#fff, 0.3);
+
+    span:first-child{
+      font-size: 24px;
+      margin-right: 15px;
+    }
+
+    & + .button{
+      margin-top: 20px;
+    }
+
+    &:hover{
+      right: 0 !important;
+    }
+  }
+
+  &.open{
+    .button{
+      right: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper{
+
+    &.open{
+      .button{
+        &:not(:hover){
+          right: -122px !important;
+        }
+      }
+    }
+  }
+}

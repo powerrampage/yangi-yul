@@ -1,0 +1,287 @@
+.table_scroll_top {
+  border-bottom: 1px solid #e6e9ed;
+
+  .ant-table-body {
+    transform: rotateX(180deg);
+
+    & > table {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+.ant-breadcrumb-link {
+  span {
+    color: #777b82;
+  }
+
+  &:hover {
+    span {
+      color: #282f38;
+    }
+  }
+}
+
+.ant-input-search .ant-input-wrapper {
+  position: relative;
+
+  input {
+    border-radius: 8px !important;
+    border: 1px solid #b6bccd !important;
+
+    &:focus + .ant-input-group-addon {
+      button {
+        background: #325ecd;
+
+        & > * {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .ant-input-group-addon {
+    left: 0 !important;
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 4px;
+      right: 5px;
+      z-index: 1;
+      width: 32px;
+      height: 32px;
+      background: #e6e9ed;
+      border-radius: 8px !important;
+      border: none;
+
+      & > * {
+        font-size: 20px;
+        color: #325ecd;
+      }
+    }
+  }
+}
+
+input:read-only {
+  cursor: default;
+}
+
+.ant-btn:not(:disabled).ant-btn-primary.btn_success {
+  &,
+  &:hover {
+    background: #6eaa3c;
+    border-color: #6eaa3c;
+    color: #fff;
+  }
+}
+
+.ant-alert-info {
+  border-color: rgba(#325ecd, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.ant-pagination {
+  display: flex;
+  align-items: center;
+
+  .ant-pagination-item-active {
+    cursor: not-allowed;
+    background: #f6f6f7;
+
+    a {
+      color: #85898f !important;
+      cursor: not-allowed;
+    }
+
+    &:hover {
+      border-color: #b6bccd;
+    }
+  }
+
+  .ant-pagination-item {
+    min-width: 50px;
+    height: 40px;
+    line-height: 38px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #b6bccd;
+    transition: 0.2s;
+    box-shadow: 0 0 0 8px transparent;
+    transition: 0.3s;
+
+    a {
+      color: #325ecd;
+      transition: 0.2s;
+    }
+
+    &:not(.ant-pagination-item-active):hover {
+      border-color: #325ecd !important;
+      background: #e6edfa;
+      box-shadow: 0 0 0 3px rgba(#325ecd, 0.1);
+
+      a {
+        color: #325ecd;
+      }
+    }
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    border: 1px solid #cdd1dd;
+    width: fit-content;
+    padding: 0 15px;
+    background: transparent;
+
+    a {
+      color: #325ecd;
+      font-weight: 500;
+      font-size: 17px;
+    }
+
+    &.ant-pagination-disabled {
+      background: #f6f6f7;
+
+      span {
+        color: #85898f;
+      }
+    }
+
+    &:not(.ant-pagination-disabled):hover {
+      background: #325ecd !important;
+      border-color: #325ecd;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .ant-pagination-next {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  .ant-pagination-prev {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+}
+
+.ant-divider {
+  border-block-start: 1px solid #cdd1dd !important;
+  margin: 20px 0 !important;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw600 {
+  font-weight: 600 !important;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.p-0 {
+  padding: 0px !important;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+.link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.lh12 {
+  line-height: 1.2;
+}
+
+.lh14 {
+  line-height: 1.4;
+}
+
+.lh15 {
+  line-height: 1.5;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center;
+  //margin: 20px 0;
+  cursor: pointer;
+}
+
+.text_light {
+  color: #777;
+}
+
+.t-center {
+  text-align: center !important;
+}
+

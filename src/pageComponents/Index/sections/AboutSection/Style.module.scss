@@ -1,0 +1,27 @@
+@import "../../../../assets/sass/variables.scss";
+
+.wrapper{
+  background-image: url("../../../../assets/bg.png");
+  background-attachment: fixed;
+  color: #eee;
+}
+
+.item{
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: $dark;
+  height: 100%;
+
+  .icon{
+    svg{
+      width: 60px;
+      height: 60px;
+
+      path{
+        fill: $green;
+      }
+    }
+  }
+}
