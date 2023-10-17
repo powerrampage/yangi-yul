@@ -13,10 +13,10 @@ const HeaderSection = () => {
         <div className={classes.wrapper}>
             <Container>
                 <Row gutter={[20, 20]} justify={"center"}>
-                    <Col xs={16} lg={16}>
+                    <Col xs={24} sm={24} md={24} lg={16}>
                         <SliderCard/>
                     </Col>
-                    <Col xs={8} lg={8}>
+                    <Col xs={24} sm={24} md={16} lg={8}>
                         <SecondCard/>
                     </Col>
                 </Row>

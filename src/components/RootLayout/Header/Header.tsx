@@ -132,7 +132,7 @@ const Header = () => {
 
                         </Space>
                     </Col>
-                    <Col span={4} className={classes.right}>
+                    <Col  className={classes.right}>
                         <Space>
                             <Languages/>
                         </Space>

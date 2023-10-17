@@ -72,9 +72,9 @@ const Navbar = () => {
                             ) : null}
                             {item?.submenu?.length > 0 ? (
                                 <ul className={classes.submenu}>
-                                    {item?.submenu?.map((sub: any, indx) => (
+                                    {item?.submenu?.map((sub: any, indx:number) => (
                                         <li key={indx}>
-                                            <Link href={sub.href}>
+                                            <Link href={`${sub.href}`}>
                                                 {sub.title}
                                             </Link>
                                         </li>

@@ -27,6 +27,33 @@
 
 }
 
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (max-width: 1000px) {
+
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+
+}
+
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
