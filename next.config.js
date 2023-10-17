@@ -3,6 +3,7 @@ const nextTranslate = require("next-translate-plugin");
 
 module.exports = nextTranslate({
   reactStrictMode: true,
+  distDir: 'build',
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
