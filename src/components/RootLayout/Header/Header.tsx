@@ -41,7 +41,7 @@ const Header = () => {
     ];
 
 
-    function fontSizeHandler(value) {
+    function fontSizeHandler(value:any) {
         document.body.classList.remove(`fs-20`);
         document.body.classList.remove(`fs-40`);
         document.body.classList.remove(`fs-60`);
@@ -50,7 +50,7 @@ const Header = () => {
         document.body.classList.add(`fs-${value}`);
     }
 
-    function calculate(value, type = "add") {
+    function calculate(value:any, type = "add") {
         if (type === "add" && value < 100) {
             setFont(value + 20);
             return value + 20
@@ -61,7 +61,7 @@ const Header = () => {
     }
 
 
-    function bgColorHandler(type) {
+    function bgColorHandler(type:any) {
         if (type === "greyscaleMode") {
             document.body.classList.remove('greyscaleInvertMode');
             document.body.classList.add('greyscaleMode');

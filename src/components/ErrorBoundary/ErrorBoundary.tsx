@@ -1,4 +1,3 @@
-import { withTranslation } from "react-i18next";
 import { Component, ErrorInfo, ReactNode } from "react";
 
 import classes from "./ErrorBoundary.module.scss";
@@ -35,7 +34,7 @@ class ErrorBoundary extends Component<Props, State> {
 			return (
         <Container>
           <div className={classes.container}>
-            <h1>{this.props?.t("Xatolik yuz berdi")}</h1>
+            <h1>Xatolik yuz berdi</h1>
           </div>
         </Container>
 			);
@@ -45,4 +44,4 @@ class ErrorBoundary extends Component<Props, State> {
 	}
 }
 
-export default withTranslation()(ErrorBoundary);
+export default ErrorBoundary;
