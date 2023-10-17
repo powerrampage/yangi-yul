@@ -1,3 +1,28 @@
-.wrapper{
+.wrapper {
   border-top: 1px solid #ccc;
+  background: #091B44;
+
+  .logo {
+    filter: brightness(0) invert(1);
+  }
+
+  .network {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #FFF!important;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
 }

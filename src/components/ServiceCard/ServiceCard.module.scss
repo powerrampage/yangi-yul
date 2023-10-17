@@ -1,0 +1,42 @@
+.service_card{
+  width: 100%;
+  height: 100%;
+  max-height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #FFF;
+  padding: 20px;
+  cursor: pointer;
+
+  .box{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4F5F6;
+    border-radius: 6px;
+
+
+    svg{
+      //width: 23px;
+      //height: 23px;
+      path{
+        //fill: #7D9FB9;
+      }
+    }
+  }
+
+  .title{
+    color: #0C1523;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+}

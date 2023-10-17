@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 
     .tab{
       color: #000;
@@ -20,6 +21,14 @@
       line-height: normal;
       margin-right: 10px;
       margin-left: 10px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      padding: 5px;
+      user-select: none;
+
+      &.active{
+        border-bottom: 2px solid #091B44;
+      }
     }
 
     .tab_content{

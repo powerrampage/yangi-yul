@@ -1,84 +1,49 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Col, Row } from "antd";
+import {Col, Row, Space} from "antd";
 
 import useTranslation from "next-translate/useTranslation";
 
 import { Container } from "@/components";
 import classes from "./Footer.module.scss";
+import Ring from "@/assets/svg/ring.svg";
+import Globus from "@/assets/svg/globus.svg";
+import Telegram from "@/assets/svg/telegram.svg";
 
 const Footer = () => {
   const { t } = useTranslation();
 
-  const links1 = [
-    { title: t("Sertifikatlar reestri"), link: "/certificates" },
-    { title: t("Yangiliklar"), link: "/#" },
-    { title: t("Xizmatlar va tariflar"), link: "/#" },
-  ];
 
-  const links2 = [
-    { title: t("Markaz xaqida"), link: "https://www.yt.uz/" },
-    { title: t("Loyiha xaqida"), link: "/#" },
-    { title: t("Bogʼlanish uchun"), link: "/contact" },
-  ];
-
-  const images = [
+  const network = [
     {
-      src: "/img/soliq.png",
-      href: "https://www.soliq.uz/",
+      title: "(71) 123-45-67",
+      icon: <Ring/>
     },
     {
-      src: "/img/csc.png",
-      href: "https://csec.uz/",
+      title: "https://yangiyulshahar.uz",
+      icon: <Globus/>
     },
     {
-      src: "/img/egov.png",
-      href: "http://www.egovernment.uz/uz",
-    },
-    {
-      src: "/img/mygov.png",
-      href: "https://my.gov.uz/",
-    },
-    {
-      src: "/img/yt.png",
-      href: "https://yt.uz/",
-    },
-  ];
+      title: "https://t.me/yangiyulshahar",
+      icon: <Telegram/>
+    }
+  ]
 
   return (
-    <div className={classes.wrapper + " pt-30 pb-30"}>
+    <div className={classes.wrapper}>
       <Container>
-        <Row gutter={[40, 40]}>
-          <Col xs={12} md={5}>
-            {links1?.map((l, k) => (
-              <div key={k} className={k !== 0 ? "mt-5" : ""}>
-                <Link href={l.link} className="link light">
-                  {l.title}
-                </Link>
-              </div>
-            ))}
+        <Row justify={"space-between"} gutter={[20, 20]} >
+          <Col xs={8} md={8}>
+            <Image
+                className={classes.logo}
+                src={"/images/logo.svg"} alt="e-imzo" width={180} height={60} style={{width: "auto"}}/>
           </Col>
-          <Col xs={12} md={5}>
-            {links2?.map((l, k) => (
-              <div key={k} className={k !== 0 ? "mt-5" : ""}>
-                <Link href={l.link} className="link light">
-                  {l.title}
-                </Link>
-              </div>
-            ))}
-          </Col>
-          <Col xs={24} md={14}>
-            <Row justify="center">
-              {images?.map((img, k) => (
-                <Col key={k}>
-                  <div className="pl-10 pr-10">
-                    <a href={img.href} target="_blank">
-                      <Image src={img.src} alt={img.href} height={60} width={60} style={{ width: "auto" }} />
-                    </a>
-                  </div>
-                </Col>
-              ))}
-            </Row>
+          <Col xs={16} md={16}>
+            <Space className={classes.network}  align={"center"}>
+              {network.map(({title, icon}:any,  i)=> (
+                  <a key={i} className={"d-flex"} href={title}>{icon}&nbsp;{title}</a>
+                ))}
+            </Space>
           </Col>
         </Row>
       </Container>
