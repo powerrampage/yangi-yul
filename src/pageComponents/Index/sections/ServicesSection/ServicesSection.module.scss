@@ -1,0 +1,29 @@
+.services{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F5F7FA;
+  padding: 40px 20px;
+
+  .tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tab{
+      color: #000;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .tab_content{
+      position: absolute;
+    }
+  }
+}

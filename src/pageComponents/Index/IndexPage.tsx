@@ -1,14 +1,12 @@
-import { AboutSection, ControlKeySection, GetKeys, HandBookSection, HeaderSection } from "./sections";
+import { AboutSection, ControlKeySection,  HandBookSection, HeaderSection, NewsSection } from "./sections";
+import ServicesSection from "@/pageComponents/Index/sections/ServicesSection";
 
 const IndexPage = () => {
   return (
     <div>
       <HeaderSection />
-
-      <GetKeys />
-
-      <ControlKeySection />
-
+        <NewsSection/>
+        <ServicesSection/>
       <AboutSection />
 
       <HandBookSection />

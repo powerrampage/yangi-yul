@@ -1,0 +1,28 @@
+.news_section{
+  width: 100%;
+  margin-top: 0px;
+  padding: 20px 0;
+
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+      color: #333;
+      font-size: 26px;
+      padding: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: relative;
+      z-index: 2;
+      display: block;
+      background-image: url("../../../../assets/svg/newsBefore.svg");
+      background-size: 50px;
+      background-repeat: no-repeat;
+      background-position: 20px;
+    }
+  }
+}

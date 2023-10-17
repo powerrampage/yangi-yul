@@ -8,7 +8,6 @@ import SecondCard from "@/components/SecondCard";
 
 const HeaderSection = () => {
     const {t} = useTranslation();
-
     return (
         <div className={classes.wrapper}>
             <Container>

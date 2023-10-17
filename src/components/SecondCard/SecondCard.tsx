@@ -18,6 +18,7 @@ const SecondCard = () => {
         slidesToScroll: 1,
         initialSlide: 0,
         autoplay: true,
+        arrows: false,
         dotsClass: classes.button__bar,
 
     };
